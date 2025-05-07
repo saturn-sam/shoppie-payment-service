@@ -1,0 +1,10 @@
+flask
+gunicorn
+flask-sqlalchemy
+flask-migrate
+flask-cors
+psycopg2-binary
+pika
+pyjwt
+python-jose[cryptography]
+requests
