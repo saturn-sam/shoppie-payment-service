@@ -157,7 +157,7 @@ def token_required(f):
 @app.route('/payment-api/health', methods=['GET'])
 def health_check():
     app.logger.info('Health check endpoint called')
-    return jsonify(status='ok')
+    return jsonify({'status': 'healthy', 'service': 'order-service'}), 200
 
 # Endpoints
 @app.route('/payment-api/payments', methods=['POST'])
